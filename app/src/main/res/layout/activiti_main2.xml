@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tvtende"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐUA TỐC ĐỘ"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:background="#f5f3f2"/>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:id="@+id/tvdiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtende"
+        android:layout_centerHorizontal="true"
+        android:background="#f5f3f2"
+        android:gravity="center"
+        android:text="Ai thắng ?"
+        android:textColor="@color/colorAccent"
+         />
+
+
+
+    <ImageButton
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnplay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/tvdiem"
+
+        android:layout_alignLeft="@+id/tvdiem"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="60dp"
+
+        android:background="@null"
+        android:src="@drawable/play" />
+
+    <Button
+        android:id="@+id/btnmaybay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="107dp"
+        android:text="MÁY BAY"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp" />
+
+    <Button
+        android:id="@+id/btnoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnplay"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="291dp"
+        android:layout_marginLeft="291dp"
+        android:layout_marginTop="8dp"
+        android:text="Ô TÔ" />
+
+
+
+
+
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:id="@+id/seekbar3"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@+id/checkbox3"
+        android:thumb="@drawable/maybaypng" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/seekbar3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@+id/checkbox2"
+        android:thumb="@drawable/otopng" />
+
+
+
+
+
+</RelativeLayout>
